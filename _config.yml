@@ -36,6 +36,7 @@ exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "pac
 # Build settings
 remote_theme: pmarsceill/just-the-docs
 color_scheme: dark
+markdown: kramdown
 plugins:
   - jekyll-feed
 
