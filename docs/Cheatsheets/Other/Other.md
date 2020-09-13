@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Other
-nav_order: 1
-parent: Cheatsheets
+nav_order: 3
+parent: Pentest Cheatsheets
 has_children: true
 permalink: /docs/Cheatsheets/Other
 

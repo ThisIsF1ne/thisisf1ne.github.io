@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Cheatsheets
+title: Pentest Cheatsheets
 nav_order: 2
 has_children: true
 permalink: /docs/Cheatsheets
