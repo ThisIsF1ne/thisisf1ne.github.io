@@ -15,6 +15,7 @@ dnsrecon
 **Common Uses**
 ---------------
 _Base command, performs general enum of target domain using system DNS settings_
+
 ```
 dnsrecon -d <TARGET_DOMAIN>
 ```
