@@ -6,7 +6,7 @@ title: DNS Recon
 nav-order: 2
 ---
 
-dnsrecon
+**dnsrecon**
 ========
 
 [Kali dnsrecon Package Description](https://tools.kali.org/information-gathering/dnsrecon)  
@@ -17,16 +17,16 @@ dnsrecon
 _Base command, performs general enum of target domain using system DNS settings_
 
 ```
-dnsrecon -d <TARGET_DOMAIN>
+dnsrecon -d TARGET_DOMAIN
 ```
 
 _Perform zone transfer against target domain using the name server given_
 
 ```
-dnsrecon -a -d <TARGET_DOMAIN> -n <NS>
+dnsrecon -a -d TARGET_DOMAIN -n NAMESERVER
 ```
 
-dnsenum
+**dnsenum**
 ========
 
 [Kali dnsenum Package Description](https://tools.kali.org/information-gathering/dnsenum)  
