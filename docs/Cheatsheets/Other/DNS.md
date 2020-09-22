@@ -14,6 +14,7 @@ nav-order: 2
 
 **Common Uses**
 ---------------
+
 _Base command, performs general enum of target domain using system DNS settings_
 
 ```
