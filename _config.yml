@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: THIS IS FINE
+title: THISISFINE
 email: ThisIsF1ne@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
   Compilation of my notes while pursuing a career in security along with some random bits
@@ -34,6 +34,11 @@ permalink: pretty
 remote_theme: pmarsceill/just-the-docs
 color_scheme: dark
 markdown: kramdown
+kramdown:
+    highlighter: rouge
+    syntax_highlighter_opts:
+        block:
+            line_numbers: true
 plugins:
   - jekyll-feed
 
