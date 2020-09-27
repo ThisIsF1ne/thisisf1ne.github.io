@@ -34,11 +34,7 @@ permalink: pretty
 remote_theme: pmarsceill/just-the-docs
 color_scheme: dark
 markdown: kramdown
-kramdown:
-    highlighter: rouge
-    syntax_highlighter_opts:
-        block:
-            line_numbers: true
+
 plugins:
   - jekyll-feed
 
