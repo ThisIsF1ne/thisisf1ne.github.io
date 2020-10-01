@@ -2,7 +2,7 @@
 layout: default
 parent: Other
 grand_parent: Pentest Cheatsheets
-title: General Recon
+title: Port Enumeration
 nav-order: 1
 ---
 

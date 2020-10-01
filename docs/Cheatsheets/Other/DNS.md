@@ -9,7 +9,6 @@ nav-order: 2
 **dnsrecon**
 ========
 
-[Kali dnsrecon Package Description](https://tools.kali.org/information-gathering/dnsrecon)  
 [dnsrecon - github](https://github.com/darkoperator/dnsrecon)
 
 **Common Uses**
@@ -30,5 +29,4 @@ dnsrecon -a -d TARGET_DOMAIN -n NAMESERVER
 **dnsenum**
 ========
 
-[Kali dnsenum Package Description](https://tools.kali.org/information-gathering/dnsenum)  
 [dnsenum - github](https://github.com/fwaeytens/dnsenum)
